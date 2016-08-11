@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Triangle Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Triangle Tracker</h1>
+      <form id="measurements">
+        <h2>Please enter side lengths of your favorite triangle:<h2>
+        <div class="form-group">
+          <label for="side1">Side Length One:</label>
+          <input id="side1" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="side2">Side Length Two:</label>
+          <input id="side2" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="side3">Side Length Three:</label>
+          <input id="side3" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn btn-success"> Tell me about my triangle!</button>
+
+        <div id="equilateral">
+          <p> Your triangle is an Equilateral! Because all sides are equal.</p>
+          <img src="img/equilateral.jpg" alt="A photo of an Equilateral Triangle.">
+        </div>
+
+        <div id="isosceles">
+          <p> Your triangle is an Isosceles! Because exactly 2 sides are equal.</p>
+          <img src="img/isosceles.jpg" alt="A photo of an Isosceles Triangle.">
+        </div>
+
+        <div id="scalene">
+          <p> Your triangle is an Scalene! Because no sides are equal.</p>
+          <img src="img/scalene.jpg" alt="A photo of an Scalene Triangle.">
+        </div>
+
+        <div id="not">
+          <p> Your triangle is NOT a triangle! Because the sum of the lengths of any two sides of a triangle is less than or equal to the length of the third side.</p>
+          <img src="img/not.jpg" alt="A photo of sad face.">
+        </div>
+
+      </form>
+    </div>
+  </body>
+</html>
